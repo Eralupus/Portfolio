@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,26 +15,60 @@
                 <span>Noemie Claccin</span>
             </a>
 
-            <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
+            <nav class="nav-links d-none d-md-block" id="navLinks" aria-label="Navigation principale">
                 <a href="#apropos">À propos</a>
                 <a href="#projets">Projets</a>
                 <a href="#competences">Compétences</a>
                 <a href="#contact" class="btn btn-primary">Me contacter</a>
             </nav>
 
-            <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+            <button class="burger d-block d-md-none" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
-
     
+    <section class="hero" id="accueil">
+        <div class="slides" id="slides" aria-hidden="true">
+            <div class="slide is-active" style="background-color:#3f3d9e; --img:none;"></div>
+            <div class="slide" style="background-color: #0e7490; --img:none; "></div>
+            <div class="slide" style="background-color:#a21caf; --img:none;"></div>
+            <div class="slide" style="background-color:#b45309; --img:none;"></div>
+        </div>
+
+
+
+
+
+        <button class="slider-btn prev" id="prevBtn" aria-label="Image précédente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
+        </button>
+        <button class="slider-btn next" id="nextBtn" aria-label="Image suivante">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6" /></svg>
+        </button>
+
+        <div class="dots" id="dots" role="tablist" aria-label="Navigation du carrousel"></div>
+
+
+    </section>
+
+
+    <main>
+        <section class="section" id="apropos">
+        </section>
+        <section class="section" id="projets">
+        </section>
+        <section class="section" id="competences">
+        </section>
+        <section class="section" id="contact">
+        </section>
+    </main>
+
     <h1> Portfolio en cours ... </h1>
 
 
     <footer class="footer">
-
     </footer>
 
     <script src="script.js"></script>
